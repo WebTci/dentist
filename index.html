@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>دکتر عرفان غریبی | دندانپزشک اراک</title>
 
-   <meta name="google-site-verification" content="C5PndH7FEq-Xh4t9fAbu0VDToTdzUt8nIqayDPJhJHE" />
+    <meta name="google-site-verification" content="C5PndH7FEq-Xh4t9fAbu0VDToTdzUt8nIqayDPJhJHE" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 
@@ -214,7 +214,7 @@
                     #fd5949 45%, #d6249f 60%, #285AEB 90%);
         }
 
-        /* ظرف تصویر: همیشه فیت، وسط‌چین، بدون کشیدگی */
+
         .hero-media-frame {
             width: 100%;
             /* height: 420px; */
@@ -233,13 +233,17 @@
             object-fit: contain;
             object-position: center;
             display: block;
+            mask-image: linear-gradient(white 80%, transparent 95%);
+            scale: 1.1;
+
+
         }
     </style>
 </head>
 
 <body class="bg-surface text-on-surface antialiased selection:bg-primary selection:text-on-primary">
 
-    <!-- ================= HEADER ================= -->
+
     <header class="sticky top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/40">
         <div class="flex justify-between items-center w-full px-5 md:px-12 max-w-7xl mx-auto h-20">
 
@@ -271,7 +275,7 @@
         </div>
     </header>
 
-    <!-- ================= HERO ================= -->
+
     <section id="hero"
         class="relative overflow-hidden pt-14 pb-20 md:pt-20 md:pb-28 bg-gradient-to-b from-surface via-surface-container-low to-surface">
         <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10">
@@ -280,12 +284,14 @@
             class="absolute bottom-10 left-10 w-80 h-80 bg-secondary-container/25 rounded-full blur-3xl pointer-events-none -z-10">
         </div>
 
-        <div class="max-w-7xl mx-auto px-5 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- تغییر lg به md در گرید -->
+        <div class="max-w-7xl mx-auto px-5 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
 
             <!-- متن -->
-            <div class="lg:col-span-7 flex flex-col items-center md:items-start gap-6 text-center md:text-right">
+            <!-- تغییر lg به md در col-span -->
+            <div class="md:col-span-7 flex flex-col items-center md:items-start gap-6 text-center md:text-right">
 
-                <!-- بج بالای تیتر -->
+
                 <div
                     class="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs md:text-sm mx-auto md:mx-0">
                     <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
@@ -308,8 +314,9 @@
 
             </div>
 
-            <!-- تصویر -->
-            <div class="lg:col-span-5 relative" style="transform: rotate(20deg);">
+
+            <!-- تغییر lg به md در col-span -->
+            <div class="md:col-span-5 relative" style="transform: rotate(20deg);">
                 <div class="relative mx-auto max-w-md lg:max-w-none">
                     <div
                         class="absolute -inset-1.5 bg-gradient-to-tr from-primary/30 to-secondary/10 rounded-[28px] blur-xl opacity-75">
@@ -320,7 +327,8 @@
 
                         <div class="hero-media-frame">
                             <!-- <img alt="دکتر عرفان غریبی - دندانپزشک اراک" loading="lazy" src="./logo.png" /> -->
-                            <img alt="دکتر عرفان غریبی - دندانپزشک اراک" loading="lazy" src="./drgh.png" />
+                            <img alt="دکتر عرفان غریبی - دندانپزشک اراک" loading="lazy" src="./drgh.webp"
+                                style="transform: rotate(-16deg);" />
                         </div>
 
 
@@ -332,7 +340,7 @@
         </div>
     </section>
 
-    <!-- ================= راه‌های ارتباطی ================= -->
+
     <section id="contact-ways" class="py-20 md:py-24 bg-surface-container-lowest border-t border-outline-variant/40">
         <div class="max-w-5xl mx-auto px-5 md:px-12">
 
@@ -443,7 +451,7 @@
         </div>
     </section>
 
-    <!-- ================= مسیریابی ================= -->
+
     <section id="directions" class="py-20 md:py-24 bg-surface border-t border-outline-variant/40">
         <div class="max-w-5xl mx-auto px-5 md:px-12">
 
@@ -475,30 +483,29 @@
 
                 <div
                     class="relative w-full h-64 md:h-80 rounded-xl overflow-hidden border border-outline-variant/60 bg-surface-container-high">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.9999999999995!2d49.6833!3d34.0833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f95b3bbbbbbbbbb%3A0xbbbbbbbbbbbbbbbb!2sArak%2C%20Markazi%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+
+                    <iframe src="https://balad.ir/embed?p=63ut9v1n2X4EdX" title="مشاهده «دکتر عرفان غریبی» روی نقشه بلد"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0">
-                    </iframe>
+                        referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0"></iframe>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
 
-                    <a href="https://balad.ir" target="_blank" rel="noopener noreferrer"
+                    <a href="https://balad.ir/p/63ut9v1n2X4EdX" target="_blank" rel="noopener noreferrer"
                         class="group flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-primary border border-outline-variant hover:border-primary text-on-surface hover:text-on-primary text-sm md:text-base font-medium transition-all">
                         <span
                             class="material-symbols-outlined text-primary group-hover:text-on-primary text-xl transition-colors">near_me</span>
                         <span>مسیریابی با بلد</span>
                     </a>
 
-                    <a href="https://nshn.ir" target="_blank" rel="noopener noreferrer"
+                    <a href="https://nshn.ir/3d_br2WS0B4oIE" target="_blank" rel="noopener noreferrer"
                         class="group flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-primary border border-outline-variant hover:border-primary text-on-surface hover:text-on-primary text-sm md:text-base font-medium transition-all">
                         <span
                             class="material-symbols-outlined text-primary group-hover:text-on-primary text-xl transition-colors">navigation</span>
                         <span>مسیریابی با نشان</span>
                     </a>
 
-                    <a href="https://maps.google.com/?q=Arak,Iran" target="_blank" rel="noopener noreferrer"
+                    <a href="https://maps.app.goo.gl/KvXJBjapHACQzNe49" target="_blank" rel="noopener noreferrer"
                         class="group flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-surface-container-high hover:bg-primary border border-outline-variant hover:border-primary text-on-surface hover:text-on-primary text-sm md:text-base font-medium transition-all">
                         <span
                             class="material-symbols-outlined text-primary group-hover:text-on-primary text-xl transition-colors">map</span>
@@ -511,7 +518,7 @@
         </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
+
     <footer class="bg-surface-container-lowest border-t border-outline-variant/40">
         <div class="max-w-7xl mx-auto px-5 md:px-12 py-8">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-right">
@@ -539,7 +546,7 @@
         </div>
     </footer>
 
-    <!-- ================= THEME TOGGLE SCRIPT ================= -->
+
     <script>
             (function () {
                 var root = document.documentElement;
